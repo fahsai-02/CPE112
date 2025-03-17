@@ -56,6 +56,10 @@ class LinkedList {
             }
         }
     }
+
+    public String findValue(int n){
+        return "F";
+    }
 }
 
 public class LinkList {

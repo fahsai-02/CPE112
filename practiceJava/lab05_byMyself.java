@@ -36,11 +36,14 @@ class Tree {
 
     private Node searchName(String name){
         for (Node n : this.node ){
-            if(n != null)
-
+            if(n != null && n.name.equals(name)){
+                return n;
+            }
         }
+        return null;
     }
 
+    
 }
 
 
