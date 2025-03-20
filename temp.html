@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Flight Management</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Manage Flights</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Flight List (87)</h1>
+            <div class="actions">
+                <input type="text" placeholder="Search here" class="search-box">
+                <button class="filter-btn">Filter</button>
+                <button class="add-btn">+ Add Flight</button>
+            </div>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Flight No.</th>
+                    <th>Airline</th>
+                    <th>Flight Route</th>
+                    <th>Departure Date & Time</th>
+                    <th>Arrival Date & Time</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TG102</td>
+                    <td>Thai Air</td>
+                    <td>BKK → LAX</td>
+                    <td>9 Mar 2025 10:30 AM</td>
+                    <td>10 Mar 2025 00:30 AM</td>
+                    <td><span class="status on-time">On Time</span></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TG102</td>
+                    <td>Thai Air</td>
+                    <td>ICN → SFO</td>
+                    <td>9 Mar 2025 10:30 AM</td>
+                    <td>9 Mar 2025 14:30 AM</td>
+                    <td><span class="status canceled">Canceled</span></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TG102</td>
+                    <td>Thai Air</td>
+                    <td>DMK → CNX</td>
+                    <td>9 Mar 2025 10:30 AM</td>
+                    <td>9 Mar 2025 14:30 AM</td>
+                    <td><span class="status delayed">Delayed</span></td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <div class="pagination">
+                <button>&laquo;</button>
+                <span>Page 1 of 29</span>
+                <button>&raquo;</button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
