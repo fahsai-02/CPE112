@@ -1,11 +1,8 @@
+// 67070501064 Nakagamon Saengdara
+
 package Lab08;
 import java.util.*;
 
-
-/* How to input
- * 1. Enter graph type (D for Directed, U for Undirected)
- * 2. Answer Y/N (Y for Weighted Graph, N for Unweighted Graph) 
- */
 public class Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -50,20 +47,21 @@ public class Main{
                 System.out.printf("Deg(+): %d\n", graph.getOutDegree(name));
                 // System.out.printf("Deg(-): %d\n", graph.getInDegree(name));
                 if(isWeighted){
-                    System.out.printf("Weight: %d\n\n", graph.sumWeightOut(name));
-                }else{
-                    System.out.println("\n");
+                    System.out.printf("Weight: %d\n", graph.sumWeightOut(name));
                 }
             }else{
                 System.out.printf("Deg: %d\n", graph.getOutDegree(name));
                 // System.out.printf("Deg(-): %d\n", graph.getInDegree(name));
                 if(isWeighted){
-                    System.out.printf("Weight: %d\n\n", graph.sumWeightOut(name));
-                }else{
-                    System.out.println("\n");
+                    System.out.printf("Weight: %d\n", graph.sumWeightOut(name));
                 }
             }
         }
         sc.close();
     }
+
+    /*
+     * javac -d. *.java
+     * java Lab08.Main
+     */
 }
