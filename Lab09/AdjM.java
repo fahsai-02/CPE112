@@ -4,7 +4,7 @@ public abstract class AdjM {
     protected int[][];
     protected int;
 
-    public(int n){
+    public AdjM(int n){
         this.matrix = new int[n][n];
     }
 

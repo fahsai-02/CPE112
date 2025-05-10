@@ -5,14 +5,14 @@ public class Algorithm {
         return "No implementation";
     }
 
-    public String bfs(GraphM graph, int StartNode){
+    public String bfs(GraphL graph, int startNode){
         return "No implementation";
     }
 
     public String avl(GraphM graph, int StartNode){
         return "No implementation";
     }
-    
+
     public String bst(GraphM graph, int StartNode){
         return "No implementation";
     }
